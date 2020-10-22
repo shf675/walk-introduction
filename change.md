@@ -7,7 +7,7 @@ walk2.2.0
 		3、transaction.xml中注掉<tx:annotation-driven transaction-manager="txManager"/>  
 		4、gradle-wrapper.properties中distributionUrl改成http\://nexus.walkframework.org:8081/nexus/service/local/repositories/releases/content/gradle/gradle/6.6.1/gradle-6.6.1-bin.zip  
 		5、build.cmd、build.gradle、gradle.properties、pom.xml相应改动，详见示例工程  
-		web工程：server.jsp-servlet.init-parameters.development改成server.servlet.jsp.init-parameters.development  
+		web工程：server.jsp-servlet.init-parameters.development改成server.servlet.jsp.init-parameters.development，引入walk-activiti的工程application.properties中加入spring.autoconfigure.exclude[0]=org.activiti.spring.boot.SecurityAutoConfiguration  
 		api工程：spring-mvc.xml加入<context:component-scan base-package="org.walkframework.restful" />、<context:component-scan base-package="springfox" />，注释SwaggerConfig  
 3、注意：2.1.x与2.2.x将并行维护一段时间
 walk2.1.13  
