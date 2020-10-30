@@ -74,7 +74,7 @@ dependencies {
 	runtime "org.walkframework:walk-console:${walk_version}"
 	
 	//activiti相关，如首次使用需将application.properties文件中spring.activiti.database-schema-update设为true，以便初始化表
-	compile "org.walkframework:walk-activiti:${walk_version}"
+//	compile "org.walkframework:walk-activiti:${walk_version}"
 	
 	//springcloud相关
 //	compile "com.alibaba.cloud:spring-cloud-starter-alibaba-nacos-config:${alibaba_cloud_version}"
